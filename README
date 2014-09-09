@@ -8,7 +8,7 @@ TODO
 2.Give a legend for the graph
 3.Highlight nested class, giving the nesting class
 
-
+===================================
 Build:
 1.
 clone this project to
@@ -27,4 +27,24 @@ clang-llvm/build/bin
 Usage:
 $class-forest file.cpp -- > dot.gv
 $make_svg dot.gv
+
+===================================
+Build for Testing:
+1.
+Build class-forest following above steps
+2.
+uncomment add_subdirectory(class-forest-tests) in CMakelists.txt, if nacessary.
+3.
+$ninja class-forest-tests
+4.
+find the executable at
+clang-llvm/build/bin
+5.
+find the executable at
+clang-llvm/build/tools/clang/tools/extra/class-forest/class-forest-tests
+6.
+run
+$class-forest-tests
+
+
 

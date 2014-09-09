@@ -16,4 +16,4 @@ target_link_libraries(class-forest
 	clangTooling
 )
 
-#add_subdirectory(class-forest-tests)
+add_subdirectory(class-forest-tests)
